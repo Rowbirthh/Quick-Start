@@ -1,0 +1,7 @@
+{
+  "name": "quickstart-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
