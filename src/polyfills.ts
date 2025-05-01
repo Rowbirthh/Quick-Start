@@ -25,6 +25,7 @@
  * will put import in the top of bundle, so user need to create a separate file
  * in this directory (for example: zone-flags.ts), and put the following flags
  * into that file, and then add the following code before importing zone.js.
+ * Note: The import below is optional and only needed if specific flags are set in `zone-flags.ts`.
  * import './zone-flags';
  *
  * The flags allowed in zone-flags.ts are listed here.
@@ -46,7 +47,8 @@ import './zone-flags';
 
 /***************************************************************************************************
  * Zone JS is required by default for Angular itself.
- */
+// Zone.js is a library for managing and intercepting asynchronous operations in JavaScript.
+// It is required by Angular to handle change detection and ensure the UI updates correctly.
 import 'zone.js';  // Included with Angular CLI.
 
 

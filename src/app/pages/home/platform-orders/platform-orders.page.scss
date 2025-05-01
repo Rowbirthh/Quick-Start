@@ -1,0 +1,43 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  .logo {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .table-wrapper {
+    background-color: #ffffff;
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+  
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+  
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 4px;
+    }
+  
+    input[type="file"] {
+      width: 100%;
+    }
+  }
+  
+  .add-row-btn {
+    margin-top: 16px;
+  }
+  

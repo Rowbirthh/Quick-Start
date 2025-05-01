@@ -1,13 +1,63 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>me</ion-title>
+    <ion-title class="ion-text-center">My Profile</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">me</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding" [fullscreen]="true">
+  <ion-card>
+    <ion-card-content>
+
+      <!-- Name -->
+      <ion-item>
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>Name</h2>
+          <p>{{ profileData?.name || 'N/A' }}</p>
+        </ion-label>
+      </ion-item>
+
+      <!-- Phone -->
+      <ion-item>
+        <ion-icon name="call-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>Phone Number</h2>
+          <p>{{ profileData?.phone || 'N/A' }}</p>
+        </ion-label>
+      </ion-item>
+
+      <!-- Address -->
+      <ion-item>
+        <ion-icon name="location-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>Address</h2>
+          <p>{{ profileData?.address || 'N/A' }}</p>
+        </ion-label>
+      </ion-item>
+
+      <!-- Email -->
+      <ion-item>
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>Email Address</h2>
+          <p>{{ profileData?.email || 'N/A' }}</p>
+        </ion-label>
+      </ion-item>
+
+      <!-- Contacts or Additional Info -->
+      <ion-item>
+        <ion-icon name="chatbox-outline" slot="start"></ion-icon>
+        <ion-label>
+          <h2>QuickRoutes Contacts</h2>
+          <p>{{ profileData?.contactNote || 'N/A' }}</p>
+        </ion-label>
+      </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+
+  <div class="ion-text-center">
+    <ion-button color="danger" expand="block" (click)="logout()">Log Out</ion-button>
+    <p style="margin-top: 12px; color: #aaa;">v1.1.1</p>
+  </div>
 </ion-content>

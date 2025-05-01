@@ -1,0 +1,64 @@
+.register-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+  }
+  
+  .register-card {
+    width: 90%;
+    max-width: 360px;
+    border-radius: 20px;
+    padding: 24px 16px;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .register-button {
+    margin-top: 16px;
+    --background: #000;
+    --color: #fff;
+    border-radius: 20px;
+  }
+  
+  ion-card-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  ion-item {
+    --background: #f2f2f2;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    padding: 0;
+  }
+  
+  ion-input {
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #000;
+  }
+  
+  .login-button {
+    margin-top: 16px;
+    --background: #000;
+    --color: #fff;
+    border-radius: 20px;
+  }
+  
+  .signup-link {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 13px;
+    color: #000;
+  }
+  
+  .signup-link a {
+    color: #000;
+    text-decoration: underline;
+  }
+  

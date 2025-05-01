@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
-import { LoginPage } from './login.page';
-import { RouterModule } from '@angular/router';
+
+import { PlatformOrdersPageRoutingModule } from './platform-orders-routing.module';
+
+import { PlatformOrdersPage } from './platform-orders.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild([{ path: '', component: LoginPage }])
+    PlatformOrdersPageRoutingModule
   ],
-  declarations: [LoginPage]
+  declarations: [PlatformOrdersPage]
 })
-export class LoginPageModule {}
+export class PlatformOrdersPageModule {}

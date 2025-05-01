@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Reports</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="form-wrapper">
+    <h2>Delivery Report Form</h2>
+
+    <form (ngSubmit)="submitReport()">
+      <ion-item>
+        <ion-label position="floating">Date</ion-label>
+        <ion-datetime display-format="MM/DD/YYYY" [(ngModel)]="reportForm.date" name="date"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Recipient Name</ion-label>
+        <ion-input placeholder="Surname" [(ngModel)]="reportForm.recipientSurname" name="surname"></ion-input>
+        <ion-input placeholder="First Name" [(ngModel)]="reportForm.recipientFirstName" name="firstname"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Reference Number</ion-label>
+        <ion-input [(ngModel)]="reportForm.referenceNumber" name="referenceNumber"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Delivery Date</ion-label>
+        <ion-datetime display-format="MM/DD/YYYY" [(ngModel)]="reportForm.deliveryDate" name="deliveryDate"></ion-datetime>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="stacked">Your Report</ion-label>
+        <ion-textarea auto-grow rows="6" [(ngModel)]="reportForm.reportText" name="reportText"></ion-textarea>
+      </ion-item>
+
+      <ion-button expand="block" type="submit" class="submit-btn">Submit</ion-button>
+    </form>
+  </div>
+</ion-content>

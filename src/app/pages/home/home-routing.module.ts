@@ -7,7 +7,21 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage
+  },
+ 
+  {
+    path: 'platform-orders',
+    loadChildren: () => import('./platform-orders/platform-orders.module').then( m => m.PlatformOrdersPageModule)
+  },
+  {
+    path: 'reports',
+    loadChildren: () => import('./reports/reports.module').then( m => m.ReportsPageModule)
+  },
+  {
+    path: 'waybill-summary',
+    loadChildren: () => import('./waybill-summary/waybill-summary.module').then( m => m.WaybillSummaryPageModule)
   }
+
 ];
 
 @NgModule({
